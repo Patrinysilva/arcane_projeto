@@ -1,0 +1,94 @@
+@use 'variaveis';
+
+.inicio {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    &__video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    }
+
+    &__logo{
+        left: 60px;
+        top: 80px;
+        max-width: 370px;
+        width: 100%;
+        margin-top: 80px;
+        position: absolute;
+
+        img{
+
+        }
+        h2{
+            text-transform: uppercase;
+            color: variaveis.$corTextoPrincipal;
+            text-align: center;
+            background-color: variaveis.$corFundo;
+        }
+    }
+    
+    &__link{
+        position: absolute;
+        top: 32px; 
+        right: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    &__netflix {
+        width: 240px;
+        height: 114px;
+        border: 1px solid rgb(97, 92, 92);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(10, 10, 10, 0.72);
+        position: absolute;
+        bottom: 300px;
+        right: 48px;
+        z-index: 5;
+    }
+
+    &__carousel {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    
+    &__carousel__container {
+        height: 330px;
+        display: flex;
+        max-width: 90%;
+        gap: 16px;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+
+    &__carousel__item {
+        width: 330px;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+}

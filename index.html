@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
+    <section class="inicio">
+        <video autoplay muted loop class="inicio__video">
+            <source src="./src/images/cena_arcane_fundo.mp4" type="video/mp4">
+            Seu navegador não suporta o formato de vídeo.
+        </video>
+        <div class="inicio__logo">
+            <img src="./src/images/arcane_logo.avif" alt="">
+            <h2 class="title--small">
+                2ª temporada de Arcane — já disponível!
+            </h2>
+        </div>
+        <div class="inicio__link">
+            <a class="button title--small" href="https://www.netflix.com/title/81435684">Assista</a>
+        </div>
+        <div class="inicio__netflix">
+            <p class="text">SOMENTE EM</p>
+            <a href="https://www.netflix.com/title/81435684"><img src="./src/images/netflix.avif" alt="netflix"></a>
+        </div>
+
+        <div class="inicio__carousel">
+            <!-- <button class="inicio__carousel__btn inicio__carousel__btn--prev">
+                <img src="./src/images/arrow-left.svg" alt="Anterior">
+            </button>
+            <button class="inicio__carousel__btn inicio__carousel__btn--next">
+                <img src="./src/images/arrow-right.svg" alt="Próximo">
+            </button> -->
+            
+            <div class="inicio__carousel__container">
+                <a href="https://www.youtube.com/watch?v=E2Rj2gQAyPA&t=1s&ab_channel=LeagueofLegends">
+                    <img class="inicio__carousel__item" src="./src/images/youtube/img-youtube-1.avif" alt="Imagem 1">
+                </a>
+                <a href="https://www.youtube.com/watch?v=pl2K9rvsS74&ab_channel=Netflix">
+                    <img class="inicio__carousel__item" src="./src/images/youtube/img-youtube-2.avif" alt="Imagem 2">
+                </a>
+                <a href="https://www.youtube.com/watch?v=3jf6xOg6e7Y&ab_channel=RiotGamesMusic">
+                    <img class="inicio__carousel__item" src="./src/images/youtube/img-youtube-3.avif" alt="Imagem 3">
+                </a>
+                <a href="https://www.youtube.com/watch?v=LUK9FRxCTtM&ab_channel=LeagueofLegendsBrasil">
+                    <img class="inicio__carousel__item" src="./src/images/youtube/img-youtube-4.avif" alt="Imagem 4">
+                </a>
+                <a href="https://www.youtube.com/watch?v=Wr6hK5vcels&t=2s&ab_channel=LeagueofLegendsBrasil">
+                    <img class="inicio__carousel__item" src="./src/images/youtube/img-youtube-5.avif" alt="Imagem 4">
+                </a>
+                <a href="https://www.youtube.com/watch?v=rR5vyzjGwmk&ab_channel=RiotGames">
+                    <img class="inicio__carousel__item" src="./src/images/youtube/img-youtube-6.avif" alt="Imagem 4">
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+
+
     
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>
