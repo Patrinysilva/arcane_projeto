@@ -1,5 +1,7 @@
 @use 'variaveis';
 
+
+
 .inicio {
     position: relative;
     width: 100%;
@@ -73,7 +75,7 @@
     }
     
     &__carousel__container {
-        height: 330px;
+        height: 230px;
         display: flex;
         max-width: 90%;
         gap: 16px;
